@@ -78,6 +78,8 @@ public class BaseTest {
         }
         drivers.set(driver);
         getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        getDriver().manage().window().maximize();
+
     }
 
     public WebDriver getDriver(){
